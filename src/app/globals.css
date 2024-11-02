@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--primary: #63BC55;
+	--secondary: #599565;
+  --background: #ffffff;
+}
