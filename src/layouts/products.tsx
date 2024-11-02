@@ -1,61 +1,74 @@
+"use client";
+
+import Image from "next/image";
+
+import Autoplay from "embla-carousel-autoplay";
+
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
+
 import { Product } from "@/components/product";
 
+import { products } from "@/data/products";
+import { Separator } from "@/components/ui/separator";
+
 export const Products = () => (
-  <section className="p-10">
+  <section className="content py-10">
     <h2 className="text-5xl font-extralight">Produtos</h2>
 
-    <div className="grid grid-cols-3 gap-8 mt-10">
-      <Product
-        name="Cadeira thai"
-        images={[{ color: "black", url: "/images/products/thai-preta.png" }]}
-        size="585x900x465mm"
-        weight="182kg"
+    <Carousel
+      className="pt-8"
+      opts={{
+        loop: true,
+      }}
+      plugins={[
+        Autoplay({
+          delay: 2000,
+        }),
+      ]}
+    >
+      <CarouselContent>
+        {products.map((product) => (
+          <CarouselItem key={product.name} className="md:basis-1/3">
+            <Product
+              name={product.name}
+              images={product?.images}
+              size={product.size}
+              weight={product.weight}
+            />
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+    </Carousel>
+
+    <Separator className="w-3/12 my-10 mx-auto bg-primary" />
+
+    <div className="grid grid-cols-3 gap-4">
+      <Image
+        className="w-full"
+        src={"/images/image-1.jpg"}
+        alt={"imagem-1"}
+        width={300}
+        height={100}
       />
 
-      <Product
-        name="Cadeira viviane"
-        images={[
-          { color: "black", url: "/images/products/viviane-preta.jpeg" },
-          { color: "white", url: "/images/products/viviane-branca.jpeg" },
-        ]}
-        size=" 520x780x450mm"
-        weight="156kg"
+      <Image
+        className="w-full"
+        src={"/images/image-2.jpg"}
+        alt={"imagem-1"}
+        width={300}
+        height={100}
       />
 
-      <Product
-        name="Cadeira santorini"
-        images={[
-          { color: "black", url: "/images/products/santorini-preta.jpeg" },
-          { color: "white", url: "/images/products/santorini-branca.jpeg" },
-        ]}
-        size="550x760x450mm"
-        weight="152kg"
-      />
-
-      <Product
-        name="Cadeira bistro"
-        images={[
-          { color: "black", url: "/images/products/bistro-preta.jpeg" },
-          { color: "white", url: "/images/products/bistro-branca.jpeg" },
-        ]}
-        size="440x880x440mm"
-        weight="182kg"
-      />
-
-      <Product
-        name="Banqueta"
-        images={[
-          { color: "black", url: "/images/products/banqueta-preta.jpeg" },
-        ]}
-        size="330x490x450mm"
-        weight="90kg"
-      />
-
-      <Product
-        name="Mesa"
-        images={[{ color: "white", url: "/images/products/mesa-branca.jpeg" }]}
-        size="700x710x700 mm"
-        weight="350kg"
+      <Image
+        className="w-full"
+        src={"/images/image-3.jpg"}
+        alt={"imagem-1"}
+        width={300}
+        height={100}
       />
     </div>
   </section>

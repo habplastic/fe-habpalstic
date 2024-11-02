@@ -1,19 +1,11 @@
 "use client";
 import { useState } from "react";
 
-import { FaWeightHanging, FaRulerCombined } from "react-icons/fa";
-
 import Image from "next/image";
 
-type TProduct = {
-  name: string;
-  images: {
-    color: "black" | "white";
-    url: string;
-  }[];
-  size: string;
-  weight: string;
-};
+import { FaWeightHanging, FaRulerCombined } from "react-icons/fa";
+
+import { TProduct } from "@/types";
 
 export const Product = (props: TProduct) => {
   const [imageDisplay, setImageDisplay] = useState(
@@ -21,19 +13,11 @@ export const Product = (props: TProduct) => {
   );
 
   return (
-    <div className="group">
-      <Image
-        className="group-hover:hidden w-full h-full object-cover"
-        src={props.images[0].url}
-        alt={props.name}
-        width={300}
-        height={400}
-      />
-
-      <div className="invisible group-hover:visible  group-hover:w-full group-hover:h-full group-hover:shadow-xl ">
-        <div className="hidden group-hover:block w-full h-[400px]">
+    <div>
+      <div className="w-full h-full">
+        <div className="block w-full h-[300px]">
           <Image
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover border-l  border-t  border-r rounded-tl rounded-tr"
             src={imageDisplay}
             alt={props.name}
             width={300}
@@ -41,7 +25,7 @@ export const Product = (props: TProduct) => {
           />
         </div>
 
-        <div className="hidden group-hover:block pt-4 px-2">
+        <div className="block p-4 px-2 bg-white border rounded-bl rounded-br">
           <div className="flex items-center justify-between">
             <p className="font-bold">{props.name}</p>
 
