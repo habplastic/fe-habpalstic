@@ -17,8 +17,6 @@ import { Separator } from "@/components/ui/separator";
 
 export const Products = () => (
   <section className="content py-10">
-    <h2 className="text-5xl font-extralight">Produtos</h2>
-
     <Carousel
       className="pt-8"
       opts={{
@@ -46,7 +44,7 @@ export const Products = () => (
 
     <Separator className="w-3/12 my-10 mx-auto bg-primary" />
 
-    <div className="grid grid-cols-3 gap-4">
+    <div className="flex flex-col items-center md:grid md:grid-cols-3 gap-4">
       <Image
         className="w-full"
         src={"/images/image-1.jpg"}

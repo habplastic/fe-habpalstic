@@ -2,13 +2,13 @@ import { TProduct } from "@/types";
 
 export const products: TProduct[] = [
   {
-    name: "Cadeira thai",
+    name: "Cadeira Thai",
     images: [{ color: "black", url: "/images/products/thai-preta.png" }],
     size: "585x900x465mm",
     weight: "182kg",
   },
   {
-    name: "Cadeira viviane",
+    name: "Cadeira Viviane",
     images: [
       { color: "black", url: "/images/products/viviane-preta.jpeg" },
       { color: "white", url: "/images/products/viviane-branca.jpeg" },
@@ -17,7 +17,7 @@ export const products: TProduct[] = [
     weight: "156kg",
   },
   {
-    name: "Cadeira santorini",
+    name: "Cadeira Santorini",
     images: [
       { color: "black", url: "/images/products/santorini-preta.jpeg" },
       { color: "white", url: "/images/products/santorini-branca.jpeg" },
@@ -26,7 +26,7 @@ export const products: TProduct[] = [
     weight: "152kg",
   },
   {
-    name: "Cadeira bistro",
+    name: "Cadeira Bistro",
     images: [
       { color: "black", url: "/images/products/bistro-preta.jpeg" },
       { color: "white", url: "/images/products/bistro-branca.jpeg" },
