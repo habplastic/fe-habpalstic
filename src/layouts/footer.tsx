@@ -1,5 +1,8 @@
 import Image from "next/image";
 
+import { FaRegCopyright } from "react-icons/fa6";
+import { HiOutlineLocationMarker } from "react-icons/hi";
+
 export const Footer = () => {
   return (
     <footer className="content-grid w-full shadow-lg shadow-white z-50">
@@ -16,7 +19,15 @@ export const Footer = () => {
         </div>
 
         <div>
-          <p>Endereço</p>
+          <p className="flex items-center gap-1 text-[14px]">
+            <FaRegCopyright /> 2024
+          </p>
+        </div>
+
+        <div>
+          <p className="flex items-center gap-1">
+            <HiOutlineLocationMarker /> Campinas - SP
+          </p>
         </div>
       </div>
     </footer>
