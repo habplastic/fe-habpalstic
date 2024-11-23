@@ -10,8 +10,8 @@ export const Info = () => (
       <div className="flex flex-col items-center mb-6">
         <TbTargetArrow className="size-14 text-secondary mb-6" />
 
-        <p className="text-center text-lg font-medium lg:m-0">
-          Nossa missão é oferecer produtos de alta qualidade, duráveis e
+        <p className="text-center text-lg font-medium lg:m-0 [&>b]:text-primary">
+          Nossa <b>missão</b> é oferecer produtos de alta qualidade, duráveis e
           acessíveis, atendendo às necessidades de nossos clientes.
         </p>
       </div>
@@ -19,28 +19,28 @@ export const Info = () => (
       <div className="flex flex-col items-center ">
         <BiSolidBadgeDollar className="size-14 text-secondary mb-6" />
 
-        <p className="text-center text-lg font-medium lg:m-0">
-          Trabalhamos diretamente com a fábrica, sem intermediários e oferecendo
-          preços competitivos.
+        <p className="text-center text-lg font-medium lg:m-0 [&>b]:text-primary">
+          Trabalhamos diretamente com a fábrica, sem intermediários e oferecendo{" "}
+          <b>preços competitivos</b>.
         </p>
       </div>
 
       <div className="flex flex-col items-center ">
         <LuPackage className="size-14 text-secondary mb-6" />
 
-        <p className="text-center text-lg font-medium lg:m-0">
-          Nossos produtos são projetados para atender às necessidades do dia a
-          dia, seja para uso residencial, comercial ou em eventos.
+        <p className="text-center text-lg font-medium lg:m-0 [&>b]:text-primary">
+          Nossos <b>produtos</b> são projetados para atender às necessidades do
+          dia a dia, seja para uso residencial, comercial ou em eventos.
         </p>
       </div>
 
       <div className="flex flex-col items-center">
         <BiRecycle className="size-14 text-secondary mb-6" />
 
-        <p className="text-center text-lg font-medium lg:m-0">
+        <p className="text-center text-lg font-medium lg:m-0 [&>b]:text-primary">
           Estamos comprometidos em reduzir o impacto ambiental. Nossos produtos
-          são feitos de plástico reciclável, minimizando assim o desperdício e a
-          poluição.
+          são feitos de <b>plástico reciclável</b>, minimizando assim o
+          desperdício e a poluição.
         </p>
       </div>
     </div>
