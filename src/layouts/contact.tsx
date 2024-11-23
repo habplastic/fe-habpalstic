@@ -23,9 +23,9 @@ export const Contact = () => {
             <p className="flex items-center gap-1">
               <HiOutlineLocationMarker className="hidden md:block" />
 
-              <p className="lg:text-sm xl:text-base">
+              <span className="lg:text-sm xl:text-base">
                 R.Nhandeara, 144, Chácara da Barra, Campinas - SP, 13090-650
-              </p>
+              </span>
             </p>
           </div>
 
@@ -34,9 +34,9 @@ export const Contact = () => {
             <p className="flex items-center gap-1 w-ful">
               <FaRegEnvelope className="hidden md:block" />
 
-              <p className="w-full lg:text-sm xl:text-base">
+              <span className="w-full lg:text-sm xl:text-base">
                 contato@habplastic.com.br
-              </p>
+              </span>
             </p>
           </div>
 
