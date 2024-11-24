@@ -15,7 +15,7 @@ export const Hero = () => {
           </h1>
 
           <p className="text-lg md:text-xl">
-            Sua Escolha para Jogos de Mesas e Cadeiras de Plástico de Qualidade
+            Sua escolha para jogos de mesas e cadeiras de plástico de qualidade
           </p>
 
           <p>
