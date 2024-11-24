@@ -18,7 +18,7 @@ const config: Config = {
     },
     extend: {
       backgroundImage: {
-        hero: "url('/images/bg-image.png')",
+        hero: "linear-gradient(rgba(22, 163, 74, 0.2), rgba(0, 0, 0, 0.9)), url('/images/bgtest.jpg')",
       },
       colors: {
         primary: {

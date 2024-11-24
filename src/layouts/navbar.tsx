@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 export const Navbar = () => {
   return (
-    <header className="content-grid w-full fixed bg-background shadow-lg shadow-background z-50">
+    <header className="content-grid w-full fixed bg-background z-50">
       <div className="full-width lg:content flex items-center justify-between p-4">
         <div className="flex items-end gap-2">
           <Image src="/icons/logo.svg" alt="logo" width={36} height={36} />
