@@ -54,7 +54,7 @@ export const EmailForm = () => {
 
   return (
     <form
-      className="flex flex-col gap-6 bg-white p-6 rounded"
+      className="flex flex-col gap-6 bg-white p-6 border border-gray-200 rounded-xl"
       onSubmit={handleSubmit}
     >
       <div className="flex flex-col md:flex-row gap-4">
